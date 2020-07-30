@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "cleaners.apps.CleanersConfig",
 ]
 
 MIDDLEWARE = [
@@ -113,3 +114,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = "/static/"
+
+CLEANERS_HOLIDAY_WEEKDAY = 5  # Friday
+CLEANERS_START_WORK_HOUR = 8  # 08:00
+CLEANERS_END_WORK_HOUR = 22  # 22:00

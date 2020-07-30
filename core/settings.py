@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "cleaners.apps.CleanersConfig",
     "books.apps.BooksConfig",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
